@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+  background-color: #041955;
+}
+
+.container {
+  background-color: #3450a1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  top: 50px;
+  position: relative;
+  border-radius: 15pt;
+}
+.container h1 {
+  top: 30px;
+  position: relative;
+  font-size: 20px;
+}
+.container input {
+  position: relative;
+  top: 50px;
+}
+.container input {
+  background-color: #041955;
+  border-radius: 15pt;
+  border: 2px solid #041955;
+  width: 300px;
+  height: 30px;
+  padding: 25px 15px;
+  position: relative;
+  top: 100px;
+  color: #FFFFFF;
+  z-index: 100;
+  -webkit-box-shadow: 1px 2px 16px 0px rgba(0, 0, 0, 0.42);
+  box-shadow: 1px 2px 16px 0px rgba(0, 0, 0, 0.42);
+  font-size: 15px;
+}
+.container input:focus {
+  outline: none;
+}
+.container ::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+.container #todo-container {
+  background-color: #3450a1;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  position: relative;
+  top: 65px;
+  border-radius: 15pt;
+  overflow-x: auto;
+  overflow: overlay;
+}
+.container #todo-container p {
+  width: 300px;
+  height: 40px;
+  margin: 0 auto;
+  position: relative;
+  top: 50px;
+  color: #FFFFFF;
+  margin-bottom: 5px;
+  text-align: left;
+  padding: 8px 0px 0px 10px;
+  border: 2px solid #041955;
+  border-radius: 10pt;
+  transition: 0.3s;
+}
+.container #todo-container p:hover {
+  background-color: #041955;
+  border: 2px solid #041955;
+}
+.container #todo-container button {
+  border: none;
+  outline: none;
+  color: #FFFFFF;
+  right: 10px;
+  top: 15px;
+  position: absolute;
+  cursor: pointer;
+  background-color: transparent;
+}
+.container #todo-container button:hover {
+  color: #FFFFFF;
+}
+.container #todo-container .fall {
+  opacity: 0;
+  transition: 0.5s;
+  transform: translateY(30px);
+}
+.container #todo-container .checked {
+  right: 30px;
+  top: 15px;
+  position: absolute;
+}
+.container #todo-container .checked-item {
+  text-decoration: line-through 2px solid #000000;
+  color: #FFFFFF;
+}
+@media only screen and (max-width: 415px) {
+  .container .container {
+    width: 300px;
+  }
+  .container .container input {
+    width: 250px;
+  }
+  .container .container #todo-container {
+    width: 300px;
+    height: 500px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
