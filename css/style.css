@@ -12,8 +12,6 @@ body {
 
 .container {
   background-color: #3450a1;
-  background-repeat: no-repeat;
-  background-size: cover;
   margin: 0 auto;
   width: 400px;
   height: 400px;
@@ -41,6 +39,7 @@ body {
   position: relative;
   top: 100px;
   color: #FFFFFF;
+  letter-spacing: 2px;
   z-index: 100;
   -webkit-box-shadow: 1px 2px 16px 0px rgba(0, 0, 0, 0.42);
   box-shadow: 1px 2px 16px 0px rgba(0, 0, 0, 0.42);
@@ -92,7 +91,7 @@ body {
   background-color: transparent;
 }
 .container #todo-container button:hover {
-  color: #FFFFFF;
+  color: #b6aeae;
 }
 .container #todo-container .fall {
   opacity: 0;
@@ -105,19 +104,53 @@ body {
   position: absolute;
 }
 .container #todo-container .checked-item {
-  text-decoration: line-through 2px solid #000000;
+  text-decoration: line-through 3px solid #000000;
   color: #FFFFFF;
 }
+
+.text-container {
+  width: 220px;
+  height: 20px;
+  margin: 0 auto;
+  position: relative;
+  top: 250px;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  color: #FFFFFF;
+}
+.text-container span {
+  text-align: center;
+}
+.text-container span a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.text-container span a:hover {
+  color: #8d8d8d;
+}
+
 @media only screen and (max-width: 415px) {
-  .container .container {
-    width: 300px;
+  .container {
+    width: 280px;
+    position: relative;
+    top: 25px;
   }
-  .container .container input {
+  .container input {
     width: 250px;
   }
-  .container .container #todo-container {
-    width: 300px;
-    height: 500px;
+  .container #todo-container {
+    width: 280px;
+    height: 350px;
+  }
+  .container #todo-container p {
+    width: 250px;
+  }
+
+  .text-container {
+    position: relative;
+    top: 165px;
+    margin: 0 auto;
   }
 }
 
